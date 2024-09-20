@@ -26,3 +26,13 @@ function findWinner(playerChoice, cpuChoice){
         return 'You lose!';
       }
 }
+
+function playGame(playerChoice) {
+    const cpuChoice = cpuChoice();
+    const result = determineWinner(playerChoice, cpuChoice);
+    result.textContent = `You chose ${playerChoice}, computer chose ${cpuChoice}. ${result}`;
+  }
+
+rockBtn.addEventListener('click', () => playGame('rock'));
+paperBtn.addEventListener('click', () => playGame('paper'));
+scissorsBtn.addEventListener('click', () => playGame('scissors'));
