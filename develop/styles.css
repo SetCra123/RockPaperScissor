@@ -3,23 +3,19 @@ body {
     background-color:black;
 }
 
+
+
+.player-choice {
+    display: flex;
+}
+
 #rock {
-    display: flex;
-    max-width: 100%;
-    min-width: 33%;
-    max-height: 100%;
+    justify-content: center;
 }
 
-/* #paper {
-    display: flex;
-    max-width: 33%;
-    min-width: 33%;
-    max-height: 50%;
-} */
-
-.paper-button {
-    display: flex;
-    max-width: 50px;
-    max-height: 50px;
+#paper {
+    justify-content: center;
 }
+
+
 
